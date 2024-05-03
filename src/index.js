@@ -23,4 +23,4 @@ function changeCity(event) {
 let formInput = document.querySelector("#form");
 formInput.addEventListener("submit", changeCity);
 
-findCity("Miami");
+findCity("Paris");
