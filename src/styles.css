@@ -17,10 +17,13 @@
 }
 .emoji {
   font-size: 50px;
+  position: relative;
+  left: 125px;
+  bottom: 90px;
 }
 .sun {
   position: relative;
-  left: 165px;
+  left: 320px;
   font-size: 60px;
 }
 .city {
@@ -35,7 +38,7 @@
   color: black;
   position: relative;
   bottom: 49px;
-  left: 150px;
+  left: 320px;
 }
 strong {
   color: #e5b543;
@@ -50,11 +53,11 @@ strong {
   font-weight: 600;
 }
 .temp {
-  font-size: 120px;
+  font-size: 90px;
   color: white;
   position: relative;
   top: 0px;
-  left: 153px;
+  left: 320px;
   font-weight: 700;
 }
 .structure {
