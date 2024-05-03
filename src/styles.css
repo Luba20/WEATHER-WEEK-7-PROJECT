@@ -1,0 +1,76 @@
+.submit {
+  color: black;
+  font-style: normal;
+  background-color: #f3eee6;
+  padding: 20px;
+  border-radius: 15px;
+  border-style: double;
+  font-size: medium;
+}
+.search-input {
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: wheat;
+  border-style: double;
+  font-size: medium;
+}
+.emoji {
+  font-size: 50px;
+}
+.sun {
+  position: relative;
+  left: 165px;
+  font-size: 60px;
+}
+.city {
+  font-size: 60px;
+  .poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+}
+.celcius {
+  color: black;
+  position: relative;
+  bottom: 49px;
+  left: 150px;
+}
+strong {
+  color: #e5b543;
+}
+.day {
+  color: black;
+  font-weight: 700;
+  font-size: 35;
+}
+.time {
+  font-style: italic;
+  font-weight: 600;
+}
+.temp {
+  font-size: 120px;
+  color: white;
+  position: relative;
+  top: 0px;
+  left: 153px;
+  font-weight: 700;
+}
+.structure {
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #00548f;
+  border: groove;
+  border-radius: 120px;
+  padding: 70px;
+  border-color: white;
+  max-width: 550px;
+}
+body {
+  background-image: url("https://m.media-amazon.com/images/I/71-eRa8AWwL._AC_UF894,1000_QL80_.jpg");
+  background-size: cover;
+}
+a {
+  color: antiquewhite;
+}
