@@ -5,6 +5,41 @@ function changeTemp(response) {
   let city = document.querySelector("#city");
   city.innerHTML = response.data.city + "🌈";
   temp.innerHTML = Math.round(temperature);
+
+  let description = document.querySelector("#description");
+  description.innerHTML = response.data.condition.description;
+
+  let humidity = document.querySelector("#Humidity");
+  humidity.innerHTML = response.data.temperature.humidity;
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = Math.round(response.data.wind.speed);
+
+  let dateTime = document.querySelector("#dateTime");
+  let date = new Date(response.data.time * 1000);
+  dateTime.innerHTML = getDateTime(date);
+}
+
+function getDateTime(date) {
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let day = days[date.getDay()];
+  return `${day} ${hours}:${minutes}`;
 }
 
 function findCity(city) {
