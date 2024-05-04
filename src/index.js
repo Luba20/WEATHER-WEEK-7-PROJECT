@@ -17,6 +17,9 @@ function changeTemp(response) {
   let dateTime = document.querySelector("#dateTime");
   let date = new Date(response.data.time * 1000);
   dateTime.innerHTML = getDateTime(date);
+
+  let icon = document.querySelector("#icon");
+  icon.innerHTML = `<img src ="${response.data.condition.icon_url}" class = "weather-app-icon" />`;
 }
 
 function getDateTime(date) {
