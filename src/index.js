@@ -3,7 +3,7 @@ function changeTemp(response) {
   let temperature = response.data.temperature.current;
 
   let city = document.querySelector("#city");
-  city.innerHTML = response.data.city + "🌈";
+  city.innerHTML = response.data.city;
   temp.innerHTML = Math.round(temperature);
 
   let description = document.querySelector("#description");

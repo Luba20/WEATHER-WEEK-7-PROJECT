@@ -7,6 +7,10 @@
   border-style: double;
   font-size: medium;
 }
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
 .search-input {
   color: black;
   padding: 20px;
@@ -15,17 +19,10 @@
   border-style: double;
   font-size: medium;
 }
-.emoji {
-  font-size: 50px;
-  position: relative;
-  left: 140px;
 
-  bottom: 100px;
-}
 .sun {
-  position: relative;
-  left: 320px;
-  font-size: 40px;
+  font-size: 10px;
+  margin-top: 7px;
 }
 .city {
   font-size: 60px;
@@ -35,14 +32,18 @@
     font-style: normal;
   }
 }
+.temperature {
+  display: flex;
+}
 .celcius {
+  font-size: 26px;
   color: black;
-  position: relative;
-  bottom: 49px;
-  left: 320px;
+  margin-top: 22px;
+  font-weight: 600px;
 }
 strong {
   color: #e5b543;
+  opacity: 45px;
 }
 .day {
   color: black;
@@ -54,11 +55,9 @@ strong {
   font-weight: 600;
 }
 .temp {
-  font-size: 90px;
+  font-size: 100px;
   color: white;
-  position: relative;
-  top: 0px;
-  left: 320px;
+
   font-weight: 700;
 }
 .structure {
