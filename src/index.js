@@ -58,11 +58,7 @@ function changeCity(event) {
 
   findCity(input.value);
 }
-function getForecast(city) {
-  let apiKey = "b6e06o2b641ddbc9et442a295318f3fd";
-  let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
-  axios(apiURL).then(showForecast);
-}
+
 function showForecast(response) {
   console.log(response.data);
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
