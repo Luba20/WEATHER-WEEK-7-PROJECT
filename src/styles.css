@@ -78,24 +78,26 @@ a {
   color: antiquewhite;
 }
 
-.forecast-day {
+.weather-forecast-date {
   font-size: 23px;
   font-weight: 500px;
 }
 .forecast-emoji {
   font-size: 25px;
 }
-.max-temp {
+.weather-forecast-temperature-max {
   font-weight: bolder;
   font-size: 18px;
   color: rgb(240, 177, 61);
 }
-.min-temp {
+.weather-forecast-temperature-min {
   opacity: 0.3px;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 10px;
   color: wheat;
 }
-.forecast {
-  text-align: center;
+.weather-forecast {
+  display: inline-flex;
+  margin-top: 20px;
+  margin-right: 55px;
 }
