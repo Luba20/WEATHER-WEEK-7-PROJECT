@@ -20,6 +20,7 @@ function changeTemp(response) {
 
   let icon = document.querySelector("#icon");
   icon.innerHTML = `<img src ="${response.data.condition.icon_url}" class = "weather-app-icon" />`;
+  getForecast(response.data.city);
 }
 
 function getDateTime(date) {
@@ -57,7 +58,13 @@ function changeCity(event) {
 
   findCity(input.value);
 }
-function showForecast() {
+function getForecast(city) {
+  let apiKey = "b6e06o2b641ddbc9et442a295318f3fd";
+  let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+  axios.get(apiURL).then(showForecast);
+}
+function showForecast(response) {
+  console.log(response.data);
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
   let forecastHTML = "";
 
@@ -71,15 +78,15 @@ function showForecast() {
          <div class="weather-forecast-date">
           ${day}
          </div>
-          🌤️ 
+          <span class= "forecast-emoji">🌤️</span> 
           <div class="weather-forecast-temperatures">
-            <span class="weather-forecast-temperature-max">
-              
-          18 
-          </span>
             <span class="weather-forecast-temperature-min">
               
-          12
+          12° 
+          </span>
+            <span class="weather-forecast-temperature-max">
+              
+          18°
           </span>
           </div>
           
@@ -97,4 +104,3 @@ let formInput = document.querySelector("#form");
 formInput.addEventListener("submit", changeCity);
 
 findCity("Paris");
-showForecast();
