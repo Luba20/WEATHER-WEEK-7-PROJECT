@@ -77,3 +77,25 @@ body {
 a {
   color: antiquewhite;
 }
+
+.forecast-day {
+  font-size: 23px;
+  font-weight: 500px;
+}
+.forecast-emoji {
+  font-size: 25px;
+}
+.max-temp {
+  font-weight: bolder;
+  font-size: 18px;
+  color: rgb(240, 177, 61);
+}
+.min-temp {
+  opacity: 0.3px;
+  font-size: 18px;
+  line-height: 20px;
+  color: wheat;
+}
+.forecast {
+  text-align: center;
+}
